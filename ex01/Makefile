@@ -8,7 +8,7 @@ CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 # Executable
-NAME = Moar_brainz!
+NAME = moarBrainz
 
 # Source files
 SRC = zombieHorde.cpp \
