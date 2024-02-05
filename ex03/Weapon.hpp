@@ -1,3 +1,6 @@
+#ifndef WEAPON_HPP
+# define WEAPON_HPP
+
 #include <iostream>
 #define ATTACK_PHRASE ": attacks with their"
 
@@ -13,3 +16,5 @@ class Weapon {
         const std::string& getType() const;
         void setType(std::string type);
 };
+
+#endif

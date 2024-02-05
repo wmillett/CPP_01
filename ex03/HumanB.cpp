@@ -13,7 +13,7 @@ HumanB::~HumanB(){
 };
 
 void HumanB::attack(void){
-    std::cout << this->name << ATTACK_PHRASE << this->weapon << std::endl;
+    std::cout << this->name << ATTACK_PHRASE << this->weapon.getType() << std::endl;
 };
 
 void HumanB::setWeapon(Weapon newWeapon){
