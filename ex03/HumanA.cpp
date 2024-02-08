@@ -1,11 +1,11 @@
 #include "HumanA.hpp"
 
 
- HumanA::HumanA() : name("No name"), weapon(Weapon()){
-    this->name = "No name";
-    this->weapon.setType("No weapon");
- };
- HumanA::HumanA(std::string name, Weapon weapon) : name(name), weapon(weapon){
+//  HumanA::HumanA() : name("No name"), weapon(Weapon()){
+
+//     this->weapon.setType("No weapon");
+//  };
+ HumanA::HumanA(std::string name, Weapon& weapon) : name(name), weapon(weapon){
  };
 HumanA::~HumanA(){
 

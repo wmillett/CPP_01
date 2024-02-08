@@ -1,16 +1,9 @@
-#include <iostream>
-#include <cctype>
+
 #include "Weapon.hpp"
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
 
-// int main(){
-
-
-// }
-
-//test main
 int main()
 {
 {

@@ -1,8 +1,5 @@
 #include "Weapon.hpp"
 
-
-
-
 Weapon::Weapon(){
    type = "No weapon";
 };

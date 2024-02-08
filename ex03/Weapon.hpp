@@ -1,10 +1,9 @@
 #ifndef WEAPON_HPP
 # define WEAPON_HPP
 
+#include <cctype>
 #include <iostream>
-#define ATTACK_PHRASE ": attacks with their"
-
-
+#define ATTACK_PHRASE ": attacks with their "
 
 class Weapon {
     private:
