@@ -2,15 +2,18 @@
 #include "Harl.hpp"
 
 void Harl::debug(void){
-    std::cout << DEBUG_COMPLAINT << std::endl;
+    if(this->filter == 0)
+        std::cout << DEBUG_COMPLAINT << std::endl;
 }
 
 void Harl::info(void){
-    std::cout << INFO_COMPLAINT << std::endl;
+    if(this->filter <= 1)
+        std::cout << INFO_COMPLAINT << std::endl;
 }
 
 void Harl::warning(void){
-    std::cout << WARNING_COMPLAINT << std::endl;
+    if(this->filter <= 2)
+        std::cout << WARNING_COMPLAINT << std::endl;
 }
 
 void Harl::error(void){

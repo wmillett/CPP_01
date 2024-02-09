@@ -28,26 +28,25 @@ int main(int argc, char** argv) {
     Harl harl;
     switch (logLevel) {
         case DEBUG:
-            harl.complain("DEBUG");
-            harl.complain("INFO");
-            harl.complain("WARNING");
-            harl.complain("ERROR");
+            harl.filter = 0;
             break;
         case INFO:
-            harl.complain("INFO");
-            harl.complain("WARNING");
-            harl.complain("ERROR");
+            harl.filter = 1;
             break;
         case WARNING:
-            harl.complain("WARNING");
-            harl.complain("ERROR");
+            harl.filter = 2;
             break;
         case ERROR:
-            harl.complain("ERROR");
+            harl.filter = 3;
             break;
         case INVALID:
             std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
             return 0;
     }
+    //File complaints here:
+    harl.complain("DEBUG");
+    harl.complain("INFO");
+    harl.complain("WARNING");
+    harl.complain("ERROR");
     return 0;
 }

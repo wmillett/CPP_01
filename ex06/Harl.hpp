@@ -30,6 +30,7 @@ class Harl{
         void warning(void);
         void error(void);
     public:
+        int filter;
         void complain(std::string level);
 };
 
