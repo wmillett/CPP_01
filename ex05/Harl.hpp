@@ -5,6 +5,7 @@
 # include <string>
 # include <map>
 # include <cctype>
+# include <functional>
 
 # define DEBUG_COMPLAINT "DEBUG: I love having extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger. I really do!"
 # define INFO_COMPLAINT "INFO: I cannot believe adding extra bacon costs more money. You didn’t put enough bacon in my burger! If you did, I wouldn’t be asking for more!"
