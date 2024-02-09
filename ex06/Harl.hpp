@@ -12,6 +12,15 @@
 # define ERROR_COMPLAINT "ERROR: This is unacceptable! I want to speak to the manager now."
 
 
+enum LogLevel {
+    DEBUG,
+    INFO,
+    WARNING,
+    ERROR,
+    INVALID
+};
+
+
 class Harl{
 
     private:
