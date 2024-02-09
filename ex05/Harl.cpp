@@ -70,6 +70,6 @@ void Harl::complain(std::string level) {
 
 // void Harl::*fctPointer[4]() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 
-using HarlFuncPtr = void (Harl::*)();
+// using HarlFuncPtr = void (Harl::*)();
 
-HarlFuncPtr fctPointer[4] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+// HarlFuncPtr fctPointer[4] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
