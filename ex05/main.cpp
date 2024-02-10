@@ -1,5 +1,7 @@
 #include "Harl.hpp"
 
+typedef void (Harl::*MemberFunction)();
+
 int main() {
     Harl harl;
 

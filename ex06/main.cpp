@@ -1,21 +1,15 @@
 #include "Harl.hpp"
 
 
-LogLevel stringToLogLevel(const std::string& logLevelStr) {
-    std::string upperCaseStr = logLevelStr;
-    std::transform(upperCaseStr.begin(), upperCaseStr.end(), upperCaseStr.begin(), ::toupper);
+LogLevel stringToLogLevel(const std::string& logLevel) {
+    std::string levelComplain[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+    LogLevel logEnum[4] = {DEBUG, INFO, WARNING, ERROR};
 
-    if (upperCaseStr == "DEBUG") {
-        return DEBUG;
-    } else if (upperCaseStr == "INFO") {
-        return INFO;
-    } else if (upperCaseStr == "WARNING") {
-        return WARNING;
-    } else if (upperCaseStr == "ERROR") {
-        return ERROR;
-    } else {
-        return INVALID;
+	for (int i = 0; i < 4; i++){
+		if (logLevel == levelComplain[i])
+			return logEnum[i];
     }
+    return INVALID;
 }
 
 int main(int argc, char** argv) {
@@ -43,7 +37,7 @@ int main(int argc, char** argv) {
             std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
             return 0;
     }
-    //File complaints here:
+    
     harl.complain("DEBUG");
     harl.complain("INFO");
     harl.complain("WARNING");
